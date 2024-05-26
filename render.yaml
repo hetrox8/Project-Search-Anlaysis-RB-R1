@@ -1,7 +1,7 @@
 databases:
   - name: Trend-X
     databaseName: 
-    user: mysite
+    user: Trend-X
     plan: free
 
 services:
@@ -15,7 +15,7 @@ services:
     envVars:
       - key: DATABASE_URL
         fromDatabase:
-          name: mysite
+          name: Trend-X
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
