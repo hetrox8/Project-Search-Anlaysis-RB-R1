@@ -8,13 +8,13 @@
 <body>
   <div class="container mt-5">
     <h1>Welcome to Trendex</h1>
-    <form action="/search" method="POST">
+    <%= form_with url: '/search', local: true do |form| %>
       <div class="form-group">
-        <label for="query">Search Articles</label>
-        <input type="text" class="form-control" id="query" name="query" placeholder="Type your search here" required>
+        <%= form.label :query, "Search Articles" %>
+        <%= form.text_field :query, class: "form-control", placeholder: "Type your search here", required: true %>
       </div>
-      <button type="submit" class="btn btn-primary">Search</button>
-    </form>
+      <%= form.submit "Search", class: "btn btn-primary" %>
+    <% end %>
   </div>
 </body>
 </html>
