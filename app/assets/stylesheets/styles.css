@@ -1,0 +1,14 @@
+/* app/assets/stylesheets/styles.css */
+
+.searches-table {
+  width: 100%;
+}
+
+.searches-table th,
+.searches-table td {
+  text-align: center;
+}
+
+.ip-column {
+  text-align: right;
+}
