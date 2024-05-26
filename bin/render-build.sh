@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
+# exit on error
 set -o errexit
-
-chmod +x ./bin/rails   # Ensure rails script has execute permission
 
 bundle install
 bundle exec rails assets:precompile
