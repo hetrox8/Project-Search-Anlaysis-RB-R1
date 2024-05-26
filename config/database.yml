@@ -1,0 +1,22 @@
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: postgres
+  password: mombasa@2023
+  host: localhost
+  port: 5432
+
+development:
+  <<: *default
+  database: trendex_development
+
+test:
+  <<: *default
+  database: trendex_test
+  
+production:
+  <<: *default
+  database: trendex_production
+

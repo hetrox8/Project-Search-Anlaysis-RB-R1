@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reset Search & Trends - Trendex</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1>Reset Search & Trends</h1>
+    <form action="/reset" method="POST">
+      <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+      <button type="submit" class="btn btn-danger">Confirm Reset</button>
+    </form>
+  </div>
+</body>
+</html>

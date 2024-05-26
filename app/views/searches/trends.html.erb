@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Search Trends - Trendex</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1>Search Trends</h1>
+    <ol class="list-group">
+      <% @trends.each do |query, count| %>
+        <li class="list-group-item">
+          <%= query %> (Searched <%= count %> times)
+        </li>
+      <% end %>
+    </ol>
+    <a href="/dashboard" class="btn btn-primary mt-3">Back to Dashboard</a>
+  </div>
+</body>
+</html>
