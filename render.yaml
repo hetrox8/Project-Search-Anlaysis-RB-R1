@@ -1,6 +1,6 @@
 databases:
   - name: mysite
-    databaseName: trendex_production  # Adjust the database name as per your production environment
+    databaseName: trendex_development  # Adjust the database name as per your production environment
     user: postgres
     plan: free
 
